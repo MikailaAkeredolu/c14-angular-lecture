@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <form (ngSubmit)="submitStudentButton()" >
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input [(ngModel)]="student.name" type="text" class="form-control" required name="name">
+            </div>
+
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input [(ngModel)]="student.location" type="text" class="form-control" required name="location">
+            </div>
+
+            <br>
+
+            <button type="submit" class="btn btn-success">Submit</button>
+
+
+        </form>
+    </div>
+</div>
